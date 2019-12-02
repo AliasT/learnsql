@@ -11,4 +11,4 @@ fi
 # 获取指定行的sql语句执行
 line=$(awk "NR==$start, NR=$end" $1)
 
-mysql -uroot -e "$line"
+mysql -uroot -e "use learnsql; $line"
