@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+start=$2
+end=$3
+
+if [ ! $3 ]
+then
+  end=$2
+fi
+
+# 获取指定行的sql语句执行
+line=$(awk "NR==$start, NR=$end" $1)
+
+mysql -uroot -e "$line"
