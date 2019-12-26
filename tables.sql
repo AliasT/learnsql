@@ -1,3 +1,0 @@
-use learnsql;
-
-show tables;
