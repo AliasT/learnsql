@@ -8,3 +8,6 @@ alter table users drop column column_name;
 
 -- 更改列
 alter table users change column nickname nickname varchar(20);
+
+-- 同时更改列名
+alter table users change column a a_new text;
