@@ -1,0 +1,3 @@
+use learnsql;
+
+show tables;
