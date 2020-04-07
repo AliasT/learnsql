@@ -1,3 +1,5 @@
+-- https://dev.mysql.com/doc/refman/8.0/en/alter-table.html
+
 use learnsql;
 
 -- 添加列
