@@ -13,3 +13,6 @@ alter table users change column nickname nickname varchar(20);
 
 -- 同时更改列名
 alter table users change column a a_new text;
+
+-- 增加默认值
+alter table users alter column pass set default 123456;
