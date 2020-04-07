@@ -8,3 +8,5 @@ insert into learnsql.users (nickname, pass) select * from  (select "xiaobing2", 
 /* batch insert */
 insert into users (nickname, pass) values ("jordan", "123456"), ("anonymous", "anonymous");
 
+/* insert select */
+insert into users select * from users limit 1;
